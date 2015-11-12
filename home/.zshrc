@@ -91,5 +91,6 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 export PATH="/usr/local/sbin:$PATH"
 
-### android-sdk
+### android-sdk/ndk
 export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_NDK_HOME=/usr/local/opt/android-ndk

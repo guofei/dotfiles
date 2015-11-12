@@ -27,5 +27,6 @@ export GOPATH=/Users/kaku/go-workspace
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-### android-sdk
+### android-sdk/ndk
 export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_NDK_HOME=/usr/local/opt/android-ndk
