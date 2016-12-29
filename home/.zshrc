@@ -94,3 +94,7 @@ export PATH="/usr/local/sbin:$PATH"
 ### android-sdk/ndk
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export ANDROID_NDK_HOME=/usr/local/opt/android-ndk
+
+### emacs
+alias emacs='emacs -nw'
+
