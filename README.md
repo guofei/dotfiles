@@ -9,8 +9,8 @@ $ rbenv rehash
 ## git clone dotfiles
 ```
 $ homesick clone guofei/dotfiles
-$ cd ~ && homesick symlink dotfiles
-$ homesick symlink
+$ cd ~
+$ homesick symlink dotfiles
 ```
 
 ## update
