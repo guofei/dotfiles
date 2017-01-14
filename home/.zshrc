@@ -77,11 +77,11 @@ export LANG=en_US.UTF-8
 eval "$(rbenv init -)"
 
 ### golang
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
-export GOPATH=/Users/kaku/go-workspace
+# export PATH=$PATH:/usr/local/opt/go/libexec/bin
+# export GOPATH=/Users/kaku/go-workspace
 
 ### autojump
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 ### ssh
 alias ssh='TERM=screen ssh'
@@ -92,8 +92,8 @@ source $(brew --prefix nvm)/nvm.sh
 export PATH="/usr/local/sbin:$PATH"
 
 ### android-sdk/ndk
-export ANDROID_HOME=/usr/local/opt/android-sdk
-export ANDROID_NDK_HOME=/usr/local/opt/android-ndk
+# export ANDROID_HOME=/usr/local/opt/android-sdk
+# export ANDROID_NDK_HOME=/usr/local/opt/android-ndk
 
 ### emacs
 alias emacs='emacs -nw'
