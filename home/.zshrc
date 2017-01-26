@@ -85,9 +85,9 @@ eval "$(rbenv init -)"
 alias ssh='TERM=screen ssh'
 
 ### nvm
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 # have been moved to .zshenv
+# export NVM_DIR=~/.nvm
+# source $(brew --prefix nvm)/nvm.sh
 # export PATH="/usr/local/sbin:$PATH"
 
 ### emacs
