@@ -73,10 +73,6 @@ export LANG=en_US.UTF-8
 ### rbenv
 eval "$(rbenv init -)"
 
-### nvm
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
 ### autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 

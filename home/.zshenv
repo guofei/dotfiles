@@ -2,4 +2,7 @@ export PATH="/usr/local/heroku/bin:/Users/kaku/.rbenv/shims:/usr/local/bin:/usr/
 # export MANPATH="/usr/local/man:$MANPATH"
 
 ### nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 export PATH="/usr/local/sbin:$PATH"
+
