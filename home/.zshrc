@@ -54,11 +54,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# have been moved to .zshenv
-# export PATH="/usr/local/heroku/bin:/Users/kaku/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
@@ -78,17 +73,15 @@ export LANG=en_US.UTF-8
 ### rbenv
 eval "$(rbenv init -)"
 
+### nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 ### autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 ### ssh
 alias ssh='TERM=screen ssh'
-
-### nvm
-# have been moved to .zshenv
-# export NVM_DIR=~/.nvm
-# source $(brew --prefix nvm)/nvm.sh
-# export PATH="/usr/local/sbin:$PATH"
 
 ### emacs
 alias emacs='emacs -nw'
