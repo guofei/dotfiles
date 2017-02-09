@@ -312,6 +312,7 @@ you should place your code here."
   (setq-default
    ;; js2-mode
    js2-basic-offset 2
+   js-indent-level 2
    react-mode-offset 2
    ;; web-mode
    css-indent-offset 2
