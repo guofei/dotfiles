@@ -314,6 +314,7 @@ you should place your code here."
    js2-basic-offset 2
    js-indent-level 2
    react-mode-offset 2
+   js2-strict-trailing-comma-warning nil
    ;; web-mode
    css-indent-offset 2
    web-mode-markup-indent-offset 2
