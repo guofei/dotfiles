@@ -44,7 +44,7 @@ values."
      ;; spell-checking
      ;; version-control
      (auto-completion :variables
-                      auto-completion-enable-help-tooltip t
+                      auto-completion-enable-help-tooltip 'manual
                       auto-completion-enable-snippets-in-popup t)
      c-c++
      elixir
