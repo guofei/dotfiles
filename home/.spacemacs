@@ -320,7 +320,25 @@ you should place your code here."
    web-mode-markup-indent-offset 2
    web-mode-css-indent-offset 2
    web-mode-code-indent-offset 2
-   web-mode-attr-indent-offset 2)
+   web-mode-attr-indent-offset 2
+   ;; c-mode
+   c-basic-offset 4)
+
+  ;; c mode
+  (add-hook 'c-mode-hook
+            '(lambda ()
+               (c-set-offset 'inextern-lang 0)))
+
+  ;; c++ mode
+  (add-hook 'c++-mode-hook
+            '(lambda ()
+               (c-set-offset 'inextern-lang 0)
+               (c-set-offset 'innamespace 0)))
+
+  ;; c common mode
+  (add-hook 'c-mode-common-hook
+            '(lambda ()
+               (define-key c-mode-base-map "\C-m" 'newline-and-indent)))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
