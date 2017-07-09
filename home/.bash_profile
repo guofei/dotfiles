@@ -17,11 +17,11 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# export PATH="/usr/local/heroku/bin:$PATH"
 
 ### golang
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
-export GOPATH=/Users/kaku/go-workspace
+# export PATH=$PATH:/usr/local/opt/go/libexec/bin
+# export GOPATH=/Users/kaku/go-workspace
 
 ### nvm
 export NVM_DIR=~/.nvm
