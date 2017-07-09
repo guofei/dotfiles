@@ -70,11 +70,6 @@ export LANG=en_US.UTF-8
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-### rbenv
-if type rbenv > /dev/null; then
-    eval "$(rbenv init -)"
-fi
-
 ### autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
