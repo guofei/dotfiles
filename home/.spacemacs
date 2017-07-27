@@ -345,6 +345,12 @@ you should place your code here."
   (add-hook 'c-mode-common-hook
             '(lambda ()
                (define-key c-mode-base-map "\C-m" 'newline-and-indent)))
+
+  (with-eval-after-load 'org
+    ;; Org config :)
+    (setq org-directory "~/Dropbox/org")
+    (setq org-default-notes-file (concat org-directory "/capture.org"))
+    )
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
