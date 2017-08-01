@@ -348,8 +348,22 @@ you should place your code here."
 
   (with-eval-after-load 'org
     ;; Org config :)
-    (setq org-directory "~/Dropbox/org")
-    (setq org-default-notes-file (concat org-directory "/capture.org"))
+    (setq org-directory (expand-file-name "~/Dropbox/org"))
+    (setq org-default-notes-file (concat org-directory "~/Dropbox/org/gtd.org"))
+    (setq org-agenda-files '("~/Dropbox/org" "~/Dropbox/org/tec" "~/Dropbox/org/work"))
+    (setq org-reverse-note-order t)
+    ;; Org Capture
+    (setq org-capture-templates
+          '(("t" "Todo" entry (file+headline "~/Dropbox/org/gtd.org" "Tasks")
+             "* TODO %?\nAdded: %U\n" :prepend t :kill-buffer t)
+            ("i" "Idea" entry (file+headline "~/Dropbox/org/gtd.org" "Someday/Maybe")
+             "* IDEA %?\nAdded: %U\n" :prepend t :kill-buffer t)
+            ("h" "Home" entry (file+headline "~/Dropbox/org/gtd.org" "Home")
+             "* TODO %?\nAdded: %U\n" :prepend t :kill-buffer t)
+            ("m" "Memo" entry (file+headline "~/Dropbox/org/memo.org" "Memos")
+             "* MEMO %?\nAdded: %U\n" :prepend t :kill-buffer t)
+            )
+          )
     )
   )
 
