@@ -2,9 +2,7 @@ export PATH="/usr/local/heroku/bin:/Users/kaku/.rbenv/shims:/usr/local/bin:/usr/
 # export MANPATH="/usr/local/man:$MANPATH"
 
 ### rbenv
-if type rbenv > /dev/null; then
-    eval "$(rbenv init -)"
-fi
+eval "$(rbenv init -)"
 
 ### nvm
 export NVM_DIR=~/.nvm
