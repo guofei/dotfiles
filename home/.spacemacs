@@ -355,13 +355,13 @@ you should place your code here."
     ;; Org Capture
     (setq org-capture-templates
           '(("t" "Todo" entry (file+headline "~/Dropbox/org/gtd.org" "Tasks")
-             "* TODO %?\nAdded: %U\n" :prepend t :kill-buffer t)
+             "* TODO %?\n  ADDED: %U\n" :prepend t :kill-buffer t)
             ("i" "Idea" entry (file+headline "~/Dropbox/org/gtd.org" "Someday/Maybe")
-             "* IDEA %?\nAdded: %U\n" :prepend t :kill-buffer t)
+             "* IDEA %?\n  ADDED: %U\n" :prepend t :kill-buffer t)
             ("h" "Home" entry (file+headline "~/Dropbox/org/gtd.org" "Home")
-             "* TODO %?\nAdded: %U\n" :prepend t :kill-buffer t)
+             "* TODO %?\n  ADDED: %U\n" :prepend t :kill-buffer t)
             ("m" "Memo" entry (file+headline "~/Dropbox/org/memo.org" "Memos")
-             "* MEMO %?\nAdded: %U\n" :prepend t :kill-buffer t)
+             "* MEMO %?\n  ADDED: %U\n" :prepend t :kill-buffer t)
             )
           )
     )
