@@ -85,3 +85,6 @@ eval "$(rbenv init -)"
 ### nvm
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
+
+### custom shell script
+[ -f ~/.custom.sh ] && . ~/.custom.sh
