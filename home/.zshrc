@@ -77,7 +77,7 @@ export LANG=en_US.UTF-8
 alias ssh='TERM=screen ssh'
 
 ### emacs
-alias emacs='emacs -nw'
+### alias emacs='emacs -nw'
 
 ### rbenv
 eval "$(rbenv init -)"
