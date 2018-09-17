@@ -55,6 +55,7 @@ This function should only modify configuration layer settings."
             shell-default-position 'bottom
             shell-default-shell 'eshell
             shell-enable-smart-eshell t)
+     (spell-checking :variables spell-checking-enable-by-default nil)
      better-defaults
      c-c++
      chrome
@@ -71,7 +72,6 @@ This function should only modify configuration layer settings."
      react
      ruby
      ruby-on-rails
-     spell-checking
      syntax-checking
      treemacs
      yaml
