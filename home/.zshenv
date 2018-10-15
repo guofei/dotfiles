@@ -2,7 +2,8 @@
 export PATH=/usr/local/bin:$PATH
 
 ### golang
-export PATH=$PATH:$GOPATH/bin
+export GOPATH=~/go
+export PATH=$PATH:/usr/local/opt/go/libexec/bin:$GOPATH/bin
 
 ### postgresql
 export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
