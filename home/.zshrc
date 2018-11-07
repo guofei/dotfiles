@@ -88,3 +88,8 @@ export NVM_DIR="$HOME/.nvm"
 
 ### custom shell script
 [ -f ~/.custom.sh ] && . ~/.custom.sh
+
+### pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
